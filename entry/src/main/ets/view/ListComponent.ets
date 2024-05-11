@@ -15,7 +15,8 @@ export struct ListComponent {
         }, (item: TodoItem) => item.id.toString())
       }
       .width('100%')
-      .height('100%')
+      .height('auto')
     }
+    .flexGrow(1)
   }
 }

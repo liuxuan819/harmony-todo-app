@@ -1,3 +1,4 @@
+import { AddItemComponent } from '../view/AddItemComponent'
 import { ListComponent } from '../view/ListComponent'
 import { TitleComponent } from '../view/TitleComponent'
 import { TodoItem } from '../viewModel/TodoItem'
@@ -14,9 +15,10 @@ struct Index {
   ]
 
   build() {
-    Column() {
+    Flex({ direction: FlexDirection.Column }) {
       TitleComponent()
       ListComponent({ list: $list })
+      AddItemComponent({ list: $list })
     }
     .width('100%')
     .height('100%')
