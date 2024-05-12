@@ -16,9 +16,9 @@ struct Index {
 
   build() {
     Flex({ direction: FlexDirection.Column }) {
-      TitleComponent()
-      ListComponent({ list: $list })
-      AddItemComponent({ list: $list })
+      TitleComponent().flexShrink(0)
+      ListComponent({ list: $list }).flexGrow(1)
+      AddItemComponent({ list: $list }).flexShrink(0)
     }
     .width('100%')
     .height('100%')

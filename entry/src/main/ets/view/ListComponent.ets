@@ -17,6 +17,5 @@ export struct ListComponent {
       .width('100%')
       .height('auto')
     }
-    .flexGrow(1)
   }
 }
